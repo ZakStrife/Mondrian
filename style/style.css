@@ -1,0 +1,206 @@
+#grid-container
+{
+    height: 55vh;
+    width: 800px;
+    display: grid;
+    grid-template-areas:
+    "w1 w1 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w4 w4 y1 y1"
+    "w1 w1 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w2 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w3 w4 w4 y1 y1"
+    "w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 y1 y1"
+    "w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 y1 y1"
+    "w1 w1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 w5 w5 w5 w5 w5 b2 b2 b2 b2 b2 b2 b2 b2 b2 w4 w4 y1 y1"
+    ".  .  w6 w6 w6 w6 .  .  w7 w7 w7 w7 w8 w8 y2 y2 y2 y2 y2 o1 o1 o1 o1 o1 o1 o1 o2 o2 w4 w4 y1 y1"
+    ".  .  w6 w6 w6 w6 .  .  w7 w7 w7 w7 w8 w8 y2 y2 y2 y2 y2 o1 o1 o1 o1 o1 o1 o1 o2 o2 w4 w4 y1 y1"
+    ".  .  w6 w6 w6 w6 .  .  w7 w7 w7 w7 w8 w8 y2 y2 y2 y2 y2 o1 o1 o1 o1 o1 o1 o1 o2 o2 w4 w4 y1 y1"
+    ".  .  w6 w6 w6 w6 .  .  w7 w7 w7 w7 w8 w8 y2 y2 y2 y2 y2 o1 o1 o1 o1 o1 o1 o1 o2 o2 w4 w4 y1 y1"
+    ".  .  w6 w6 w6 w6 .  .  w7 w7 w7 w7 w8 w8 y2 y2 y2 y2 y2 o1 o1 o1 o1 o1 o1 o1 o2 o2 w4 w4 y1 y1"
+    ".  .  w6 w6 w6 w6 .  .  w7 w7 w7 w7 w8 w8 y2 y2 y2 y2 y2 o1 o1 o1 o1 o1 o1 o1 o2 o2 w4 w4 y1 y1"
+    ".  .  w6 w6 w6 w6 .  .  y3 y3 o3 o3 o3 o3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 z1 z1 .  .  .  . "
+    ".  .  w6 w6 w6 w6 .  .  y3 y3 o3 o3 o3 o3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 z1 z1 .  .  .  . "
+    ".  .  w6 w6 w6 w6 .  .  y3 y3 o3 o3 o3 o3 b3 b3 b3 b3 b3 w9 w9 w9 w9 w9 w9 w9 z1 z1 .  .  .  . "
+    "z2 z2 o4 o4 o4 o4 .  .  y4 y4 z3 z3 z3 z3 z3 z3 z3 z4 z4 z4 z4 z4 z4 b4 b4 b4 y5 y5 z5 z5 z5 z5"
+    "z2 z2 o4 o4 o4 o4 .  .  y4 y4 z3 z3 z3 z3 z3 z3 z3 z4 z4 z4 z4 z4 z4 b4 b4 b4 y5 y5 z5 z5 z5 z5"
+    "z2 z2 o4 o4 o4 o4 .  .  y4 y4 z3 z3 z3 z3 z3 z3 z3 z4 z4 z4 z4 z4 z4 b4 b4 b4 y5 y5 z5 z5 z5 z5"
+    "z2 z2 o4 o4 o4 o4 .  .  y4 y4 z3 z3 z3 z3 z3 z3 z3 z4 z4 z4 z4 z4 z4 b4 b4 b4 y5 y5 z5 z5 z5 z5"
+    "z2 z2 o4 o4 o4 o4 .  .  y4 y4 z3 z3 z3 z3 z3 z3 z3 z4 z4 z4 z4 z4 z4 b4 b4 b4 y5 y5 z5 z5 z5 z5"
+    "z2 z2 o4 o4 o4 o4 .  .  y4 y4 o5 o5 o5 o5 .  .  .  .  .  .  .  .  .  z6 z6 z6 z6 z6 z6 z6 z6 z6"
+    "z2 z2 o4 o4 o4 o4 .  .  y4 y4 o5 o5 o5 o5 .  .  .  .  .  .  .  .  .  z6 z6 z6 z6 z6 z6 z6 z6 z6"
+    "z7 z7 z7 z7 z7 z7 z7 z7 y4 y4 o5 o5 o5 o5 .  .  .  .  .  .  .  .  .  z6 z6 z6 z6 z6 z6 z6 z6 z6"
+    "z7 z7 z7 z7 z7 z7 z7 z7 y4 y4 o5 o5 o5 o5 .  .  .  .  .  .  .  .  .  z6 z6 z6 z6 z6 z6 z6 z6 z6";
+    
+    grid-gap: 8px;
+    background: black;
+    padding: 10px;
+}
+
+#item1, #item2, #item3, #item4, #item5, #item6, 
+#item7, #item8, #item9, #item10, #item11, #item12, 
+#item13, #item14, #item15, #item16
+{
+    background: white;
+}
+
+#item17, #item18, #item19, #item20
+{
+    background: rgb(92, 92, 230);
+}
+
+#item21, #item22, #item23, #item24, #item25
+{
+    background: rgb(105, 226, 7);
+}
+
+#item26, #item27, #item28, #item29, #item30
+{
+    background: rgb(218, 23, 23);
+}
+
+#item1
+{
+    grid-area: w1;
+}
+
+#item2
+{
+    grid-area: w2;
+}
+
+#item3
+{
+    grid-area: w3;
+}
+
+#item4
+{
+    grid-area: w4;
+}
+
+#item5
+{
+    grid-area: w5;
+}
+
+#item6
+{
+    grid-area: w6;
+}
+
+#item7
+{
+    grid-area: w7;
+}
+
+#item8
+{
+    grid-area: w8;
+}
+
+#item9
+{
+    grid-area: w9;
+}
+
+#item10
+{
+    grid-area: z1;
+}
+
+#item11
+{
+    grid-area: z2;
+}
+
+#item12
+{
+    grid-area: z3;
+}
+
+#item13
+{
+    grid-area: z4;
+}
+
+#item14
+{
+    grid-area: z5;
+}
+
+#item15
+{
+    grid-area: z6;
+}
+
+#item16
+{
+    grid-area: z7;
+}
+
+#item17
+{
+    grid-area: b1;
+}
+
+#item18
+{
+    grid-area: b2;
+}
+
+#item19
+{
+    grid-area: b3;
+}
+
+#item20
+{
+    grid-area: b4;
+}
+
+#item21
+{
+    grid-area: y1;
+}
+
+#item22
+{
+    grid-area: y2;
+}
+
+#item23
+{
+    grid-area: y3;
+}
+
+#item24
+{
+    grid-area: y4;
+}
+
+#item25
+{
+    grid-area: y5;
+}
+
+#item26
+{
+    grid-area: o1;
+}
+
+#item27
+{
+    grid-area: o2;
+}
+
+#item28
+{
+    grid-area: o3;
+}
+
+#item29
+{
+    grid-area: o4;
+}
+
+#item30
+{
+    grid-area: o5;
+}
